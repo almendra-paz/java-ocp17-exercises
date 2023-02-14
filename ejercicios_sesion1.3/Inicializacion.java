@@ -11,8 +11,30 @@ public class Inicializacion{
 		int localVariable;
 		String localString;
 		
-		localVariable = 20;
+		final boolean flag = true;
 		
+		if(flag){
+			localVariable = 20;
+			localString = "Hello";
+		}else{
+			
+		}
+		
+		
+		/*
+		final boolean flag = true;
+		
+		if(flag){
+			localVariable = 20;
+			localString = "Hello";
+		}
+		
+		if(!flag){
+			localVariable = 10;
+			localString = "world";
+		}
+		*/
+				
 		System.out.println("localVariable:" + localVariable);
 		System.out.println("localString:" + localString);
 	}

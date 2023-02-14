@@ -1,6 +1,13 @@
 
 public class Declarations{
 	public static void main(String args[]){
+		
+		//int n = 20; 
+		int m = (n = 10);
+		System.out.println(m);
+		System.out.println(n);
+		
+		
 		//Declaraciones sin inicializacion
 		int a;
 		String nombre;
@@ -18,6 +25,7 @@ public class Declarations{
 		// Combinaciones
 		int j, k=10, l = e;
 		String str3 = "admin", str4;
+				
 		
 
 	}

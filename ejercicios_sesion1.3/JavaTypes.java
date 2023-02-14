@@ -1,10 +1,10 @@
 public class JavaTypes{
 	
-	private int $int; 	
-	private byte $byte;
-	private long $long;
-	private short $short;
-	private char $char;		
+	static private int $int; 	
+	static private byte $byte;
+	static private long $long;
+	static private short $short;
+	private char $char;	//espacio en blanco	
 	private float $float;
 	private double $double;
 	private boolean $boolean;
@@ -21,8 +21,7 @@ public class JavaTypes{
 		System.out.println(obj1.$float);
 		System.out.println(obj1.$double);
 		System.out.println(obj1.$boolean);
-		System.out.println(obj1.$str1);
-				
+		System.out.println(obj1.$str1);				
 	}	
 	
 }

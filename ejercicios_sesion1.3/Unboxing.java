@@ -8,8 +8,8 @@ Pasar de Wrapper a primitivo:
 public class Unboxing{
 	public static void main(String args[]){
 		System.out.println("---- 1. Metodos xxxValue() ----");
-		Integer integer1 = Integer.valueOf(200);		
-		int int1 = integer1.intValue();
+		Integer integer1 = Integer.valueOf(200); //crea		
+		int int1 = integer1.intValue(); //sacar
 		
 		Double double1 = Double.valueOf(200);
 		double d1 = double1.doubleValue();
@@ -23,17 +23,18 @@ public class Unboxing{
 		
 		System.out.println("---- 3. Primitivo desde String ----");
 		int i3 = Integer.parseInt("10");
-		//byte b3 = Integer.parseInt("10");
+		byte b3 = (byte)Integer.parseInt("10");
 		
 		//NumberFormatException
 		//int i31 = Integer.parseInt("10.2"); 
 		//int i32 = Integer.parseInt(null);
+		int i33 = Integer.parseInt(""+100); //"100"
 		
 		//NumberFormatException
 		//float float3 = Float.parseFloat("true"); 		
 		//float float3 = Float.parseFloat(null); 
 					
-		int i4 = Integer.parseInt("10",2); //2
+		int i4 = Integer.parseInt("110",2); //6
 		
 		int i5 = Integer.MIN_VALUE;
 		int i6 = Integer.MAX_VALUE;
@@ -51,11 +52,10 @@ public class Unboxing{
 			System.out.println("es infinito");
 		}
 		
-		float fe1 = Float.parseFloat(""+Float.NEGATIVE_INFINITY); 
-		System.out.println(fe1);
-		//""+Float.NEGATIVE_INFINITY
+		float fe1 = Float.parseFloat("Infinity"); 
 		float fe2 = Float.parseFloat("NaN");
-		System.out.println(fe1 + " " + fe2);
+		int i7 = Integer.parseInt(""+Integer.MIN_VALUE);
+		System.out.println(fe1 + " " + fe2 + " "+i7);
 		
 	}
 }
