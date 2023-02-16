@@ -4,7 +4,7 @@ public class NumericPromotion{
 		//operadores unarios
 		final byte byte1 = 1;
 		short c = -byte1;
-		System.out.println(byte1);
+		System.out.println(c);
 	
 		// finals
 		short s3 = 2 + 2;

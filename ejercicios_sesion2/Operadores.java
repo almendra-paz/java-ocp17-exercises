@@ -26,6 +26,7 @@ public class Operadores{
 		System.out.println("---- Bitwise complement (~) ----");
 		
 		byte b1 = 1;	// 00000001
+		//System.out.println(~b1);
 		byte b2 = (byte)~b1; 	// b2 es 11111110
 		System.out.println(b2);
 		System.out.println(Integer.toBinaryString(1));
@@ -38,9 +39,14 @@ public class Operadores{
 		
 		//3. Operadores Aritméticos
 		
+			System.out.println("---- Wrapper + primitivo"); 
 			//Combinando Wrapper y primitivos
 			Double da1 = 120.00;
 			Integer ia1 = 10;
+			int int2 = 12;
+			
+			int int3 = ia1 + int2; // Integer + int
+			System.out.println(int3);
 			double ra1 = da1 + ia1;
 			System.out.println(ra1);
 		
@@ -48,34 +54,83 @@ public class Operadores{
 			System.out.println("---- Concatenacion String"); 
 			String str1 = "hello";
 			String str2 = " world";
-			String s = str1 + str2;			
+			String s = str1 + str2;	
 			System.out.println(s);
+			
+			String str3 = 32 + 4 + "5";
+			System.out.println(str3); // 365
+			
+			Object obj1 = "hello";
+			//String str4 = true + 5; //obj1 + 5 no compila
+			//System.out.println(str4);
+			
 			
 		//4. Relacionales
 		
+			System.out.println("---- == ----");
 			//==
 			Integer i = 10;		
-			Double d = 10.0;
-			double d2 = d;
-			//System.out.println(i == d);	// referencias de distintos tipos
+			Double d = 10.0;			
+			double d2 = 10.0;
+			//System.out.println(i == d);	// no compila
+			System.out.println(i == d2); // true
 			
-			System.out.println("equals:");
-			System.out.println(i == d2);
+			Integer integera = 10;
+			Integer integerb = 10;	
+			Boolean	boolean1 = true;
+			Boolean	boolean2 = true;
 			
-			Integer integera = 1000;
-			Integer integerb = 1000;			
-			System.out.println("----Integers");
-			System.out.println(integera == integerb);
+			System.out.println("---- Integers ----");
+			System.out.println(integera == integerb); //true
 			
-			//instanceof
-			System.out.println("--- instanceof");
+			System.out.println("---- Booleans ----");
+			System.out.println(boolean1 == boolean2);
+			
+			//instanceof 
+			// String extends Object
+			// si obj1 es instancia de String --> 
+			// obj1 también de las clases padre de String
+			System.out.println("--- instanceof ----");
 			Object obj = "hello";
 			boolean isString = (obj instanceof String);
 			System.out.println(isString);
+			
+			System.out.println(obj instanceof Object);
 
 			boolean isNumber = (obj instanceof Number);
-			System.out.println(isNumber);		
+			System.out.println(isNumber);	
+
+			//Integer -> Number -> Object
+			Integer integer1 = 100;
+			boolean isString2 = (integer1 instanceof Number);
+			//System.out.println(isString2);
+			
+			System.out.println("---- Logicos ----");
+			
+			int logb1 = 1;	// 00000001
+			int logb2 = 2; 	// 00000010
+			int logb3 = (logb1&logb2); // b3 00000000
+			System.out.println(logb3);
+			System.out.println(logb1|logb2); //00000011
+			System.out.println(logb1^logb2);	
+			//00000011			
+
 		
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
