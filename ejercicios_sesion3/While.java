@@ -18,12 +18,18 @@ public class While{
 		
 		int n=4;
 		while(n<0);
-
+		
+		//loop infinito no valido
+		//while(1){}
+		//while(true){}
+		
 		
 		int m = 4;
 		do
 			System.out.println("loop 2");
 		while(m-- > 0);
+		
+		
 
 
 	}

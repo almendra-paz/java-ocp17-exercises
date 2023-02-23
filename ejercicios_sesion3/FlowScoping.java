@@ -9,14 +9,19 @@ public class FlowScoping{
 		//System.out.println(str.length());
 		
 		
-		if(! (saludo instanceof String str )){
+		if(!(saludo instanceof String str )){
+			//si no es una instancia de String
 			
-		}else{
+		}else{			
+			// si es una instancia de String
 			System.out.println(str.length());
-		}		
+		}	
 		
-		if(! (saludo instanceof String str ))return;
-		System.out.println(str.length());
+		
+		if(! (saludo instanceof String str2 ))return;
+		
+		System.out.println(str2.length());
+		
 		
 	}
 	

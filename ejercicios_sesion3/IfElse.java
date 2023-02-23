@@ -16,13 +16,14 @@ public class IfElse{
 		};
 
 		//Ex2
-		if(true){
-		}else{
+		if(true){			
+		}else{			
 		};
 
 		//Ex3
 		if(true);
 		else;
+				
 
 		//Ex4		
 		if(true); else;
@@ -42,6 +43,19 @@ public class IfElse{
 				System.out.println("OK");
 			}else{}
 		
+		
+		// identación
+		
+		boolean flag = false;
+		int i = 0;
+		if(flag)i = i+1;
+		
+		System.out.println("true");
+		
+		else 
+			i = i+2;
+			System.out.println("false");
+
 
 		int value = 3;
 		if(value == 0)
@@ -57,7 +71,6 @@ public class IfElse{
 		if(flag = true){
 			System.out.println("Asignacion");
 		}
-
 
 	}
 

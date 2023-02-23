@@ -1,6 +1,6 @@
 public class Labels{
 	
-	public static void main(String args[]){
+	public static void main(String args[]){		
 		main: {
 			label: {
 				System.out.println("impresion valida");				
@@ -37,6 +37,7 @@ public class Labels{
 				System.out.println("hello2");	
 			}
 		}
+				
 		System.out.println("fuera del main");
 	}
 		
