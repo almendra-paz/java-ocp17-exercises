@@ -2,16 +2,19 @@ public class StringBuilderData{
 
 	public static void main(String[] args){
 		
-		//Constructor
+		System.out.println("---- Constructor ----");
 		StringBuilder sb1 = new StringBuilder();
 		System.out.println(sb1); // ""
-		/*System.out.println(sb1.length());
+		System.out.println(sb1.length());		
 		System.out.println(sb1.capacity());
+		
+		
 		sb1.append("11111111111111111111111111111");
 		System.out.println(sb1.length());
-		System.out.println(sb1.capacity());*/
+		System.out.println(sb1.capacity());
 		
 		StringBuilder sb = new StringBuilder("abcde");
+		System.out.println(sb);
 
 		//append e insert
 		System.out.println("---- append e insert ----");
@@ -22,6 +25,10 @@ public class StringBuilderData{
 				
 		System.out.println(sb.insert(5,"__"));
 
+		sb.append("qqqqqqqqqqqqqqqqq");
+		System.out.println(sb.length()); //61
+		System.out.println(sb.capacity()); //90
+		//System.out.println(sb.insert(80,"__"));
 		//System.out.println(sb.insert(-1,"__")); // java.lang.StringIndexOutOfBoundsException
 
 		//método de referencia
@@ -30,14 +37,23 @@ public class StringBuilderData{
 
 		System.out.println(sb.reverse()); //edcba
 		System.out.println(sb); //edcba
+		System.out.println(sb.reverse().reverse()); //edcba
 		System.out.println(sb.delete(1,2));	//ecba
+		System.out.println(sb.delete(4,4));	
 		System.out.println(sb.delete(4,7));	//no exception
+		
 		//System.out.println(sb.delete(5,7));	
 		//arroja excepcion StringIndex..
 		
 		sb = new StringBuilder("abcde");
 		//System.out.println(sb.deleteCharAt(-1)); //StringIndex...Exception		
-		System.out.println(sb.replace(1,3,"--")); //a--de
+		System.out.println(sb.replace(1,3,"----")); //a--de
+		
+		sb = new StringBuilder("abcde");
+		System.out.println(sb.replace(4,7,"----")); //no exception
+		
+		
+		System.out.println("---- metodos que no devuelven un String Builder----");
 		
 		System.out.println(sb.capacity());
 		System.out.println(sb.length()); //5
@@ -45,7 +61,6 @@ public class StringBuilderData{
 		System.out.println(sb.charAt(3)); //d
 		System.out.println(sb); //a--de
 
-		System.out.println("---- metodos de referencia end----");
 
 		StringBuilder sb2 = new StringBuilder("abcde");
 

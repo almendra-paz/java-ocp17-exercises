@@ -29,9 +29,9 @@ public class TextBlocks{
 		System.out.println(piramide3.length());
 		String piramide4 = """		
 						*
-					*	*\n\s
-				*	*	*\n\s
-			""";
+					*	*\n\
+				*	*	*\n\
+				""";
 		System.out.println(piramide4);
 		System.out.println(piramide4.length());
 		String piramide5 = """		
