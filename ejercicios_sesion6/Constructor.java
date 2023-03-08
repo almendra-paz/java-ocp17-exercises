@@ -5,16 +5,16 @@ public class Constructor{
 	
 	{
 		System.out.println("Inicializador 2");
-		int a = Integer.parseInt("ss");
+		//int a = Integer.parseInt("ss");
 	}
 	
-	public Constructor (){		
-		this("clase");
-		System.out.println("constructor");		
+	public Constructor (){				
+		this("clase");	
+		System.out.println("primer constructor");
 	}
 	
 	public Constructor(String str){
-		System.out.println("constructor: "+ str);
+		System.out.println("segundo constructor: "+ str);
 	}
 	
 	public static void main(String arg[]){
